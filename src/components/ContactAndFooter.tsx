@@ -1,4 +1,4 @@
-import { Star, MapPin, Clock, Phone } from 'lucide-react';
+import { Star, MapPin, Clock, Phone, Facebook } from 'lucide-react';
 
 export default function ContactAndFooter() {
   return (
@@ -155,8 +155,18 @@ export default function ContactAndFooter() {
 
       {/* Footer */}
       <footer className="bg-slate-950 border-t border-white/5 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-500">
-          <p>&copy; {new Date().getFullYear()} JLM Small Engine Repair, Inc. All rights reserved.</p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <a 
+            href="https://www.facebook.com/people/JLM-Small-Engine-Repair-Inc/100094061449674/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="inline-flex items-center gap-2 text-slate-300 hover:text-amber-500 transition-colors mb-6"
+            aria-label="Visit our Facebook page"
+          >
+            <Facebook className="w-6 h-6" />
+            <span>Follow us on Facebook</span>
+          </a>
+          <p className="text-slate-500">&copy; {new Date().getFullYear()} JLM Small Engine Repair, Inc. All rights reserved.</p>
         </div>
       </footer>
     </section>
